@@ -69,5 +69,23 @@ double find_min_in_interval(double* arr, int n, double A, double B, int* isFound
  * @return указатель на новый массив D
  */
 double* create_merged_array(double* A, int n, double* B, int m, double* C, int l, int* sizeD);
+//   === Функции для Лабораторной работы 17 ===
+/**
+ * Заполнение целочисленного массива случайными числами
+ * @return указатель на заполненный массив
+ */
+int* full_array(int* ptrarr, int n);
+
+/**
+ * Вывод целочисленного массива
+ * @return количество (код возврата, можно вернуть 0)
+ */
+int put_array(int* ptrarr, int n);
+
+/* Алгоритмы сортировки */
+void sort_bubble(int* ptrarr, int n);   // Пузырьковая
+void sort_kokteil(int* ptrarr, int n);  // Шейкерная
+void sort_select(int* ptrarr, int n);   // Выбором
+void sort_insert(int* ptrarr, int n);   // Вставками
 
 #endif
